@@ -1,0 +1,135 @@
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Raleway&family=Silkscreen&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background-color: lavender;
+        }
+        #main_header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100vw;
+            height: 12vh;
+            font-size: 25px;
+            font-weight: bolder;
+            background-color: black;
+            color: lavender;
+            font-family: 'Silkscreen', cursive;
+        }
+        #edit_box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: lavender;
+        }
+        #edit_container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #para{
+            padding: 5px;
+            background-color: black;
+            width: 100%;
+            color: lavender;
+            text-align: center;
+            font-family: 'Silkscreen', cursive;
+        }
+        #edit_container > button{
+            width: 100%;
+            height: 30px;
+            background-color: black;
+            color: lavender;
+            font-family: 'Silkscreen', cursive;
+            border-radius: 30px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        #edit_container > textarea{
+            outline: none;
+            font-size: 14px;
+            padding: 5px;
+            font-family: 'Raleway', sans-serif;
+        }
+        footer{
+            position: sticky;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            max-width: 100vw;
+            font-size: 16px;
+            font-weight: bolder;
+            background-color: black;
+            color: lavender;
+            font-family: 'Silkscreen', cursive;
+        }
+        #notes_container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 100vw;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card_container{
+            display: flex;
+            width: 300px;
+            margin: 10px;
+            height: max-content;
+            flex-direction: column;
+            align-items: center;
+            background-color: lavender;
+            border: 1px solid black;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+        }
+        #card_content{
+            text-align: center;
+            padding: 8px;
+            overflow: auto;
+            height: 150px;
+        }
+        #card_buttons{
+            display: flex;
+            justify-content: space-evenly;
+            width: inherit;
+            background-color: white;
+            border: 1px solid black;
+            border-bottom: none;
+        }
+        #card_title{
+            font-weight: bolder;
+            font-size: 20px;
+            padding-top: 8px;
+        }
+        #card_buttons > button{
+            width: 70px;
+            height: 40px;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+@media screen and (max-width:1000px){
+    #notes_container{
+        flex-direction: column;
+    }
+}
